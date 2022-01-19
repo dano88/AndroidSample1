@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ============================================================= -->
+<!-- Application: Message Handlers -->
+<!-- Activity:    ActMain -->
+<!-- ============================================================= -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="biz.ssc.messagehandlers.ActMain"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/holo_blue_light"
+        >
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Start thread button row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <Button
+            android:id="@+id/btnStartThreads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="24dp"
+            android:padding="24dp"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/black"
+            android:text="Start Threads"
+            android:textAllCaps="false"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:onClick="startThreads"
+            />
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Singleton thread row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:text="Data from singleton thread:"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/txtSingletonData"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                tools:text="NNN"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:focusable="false"
+                />
+
+        </LinearLayout>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Message thread row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:text="Data from message thread:"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/txtMessageData"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                tools:text="NNN"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:focusable="false"
+                />
+
+        </LinearLayout>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Stop threads button row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <Button
+            android:id="@+id/btnStopThreads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="24dp"
+            android:padding="24dp"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@android:color/black"
+            android:text="Stop Threads"
+            android:textAllCaps="false"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:onClick="stopThreads"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
